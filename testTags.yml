@@ -2,7 +2,7 @@
   tasks:
   - name: Ansible create file if it doesn't exist example
     file:
-     path: "/tmp/{{filename}}"
+     path: "/tmp/tag1.txt"
      state: touch
     tags: tag1
     
@@ -10,7 +10,7 @@
   tasks:
   - name: Ansible create file with content example
     copy:
-      dest: "/tmp/{{filename}}"
+      dest: "/tmp/tag2.txt"
       content: |
         dog1
         tiger
